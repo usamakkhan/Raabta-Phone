@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:installLocation="auto">
   <uses-permission android:name="android.permission.READ_CONTACTS" />
   <uses-permission android:name="android.permission.WRITE_CONTACTS" />
@@ -33,8 +33,6 @@
       <action android:name="android.intent.action.INSERT" />
       <data android:mimeType="vnd.android.cursor.dir/contact" />
     </intent>
-    <package android:name="org.fossify.contacts.debug" />
-    <package android:name="org.fossify.contacts" />
     <!-- Required for loading contact accounts -->
     <intent>
       <action android:name="android.accounts.AccountAuthenticator" />
@@ -63,14 +61,14 @@
     <activity android:name="org.fossify.commons.activities.CustomizationActivity" android:configChanges="orientation" android:exported="false" android:label="@string/customize_colors" android:parentActivityName=".activities.SettingsActivity" />
     <activity android:name="org.fossify.commons.activities.ManageBlockedNumbersActivity" android:configChanges="orientation" android:exported="false" android:label="@string/blocked_numbers" android:parentActivityName=".activities.SettingsActivity" tools:replace="android:label" />
     <activity android:name=".activities.ManageSpeedDialActivity" android:configChanges="orientation" android:exported="false" android:label="@string/speed_dial" android:parentActivityName=".activities.SettingsActivity" />
-    <activity android:name=".activities.ConferenceActivity" android:configChanges="orientation" android:exported="false" android:label="@string/conference" android:parentActivityName="org.fossify.phone.classic.activities.CallActivity" />
+    <activity android:name=".activities.ConferenceActivity" android:configChanges="orientation" android:exported="false" android:label="@string/conference" android:parentActivityName="org.rabta.phone.classic.activities.CallActivity" />
     <activity android:name=".activities.SettingsActivity" android:configChanges="orientation" android:exported="true" android:label="@string/settings" android:parentActivityName=".activities.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
         <category android:name="android.intent.category.DEFAULT" />
       </intent-filter>
     </activity>
-    <activity android:name="org.fossify.phone.classic.activities.CallActivity" android:excludeFromRecents="true" android:exported="false" android:label="@string/ongoing_call" android:launchMode="singleTask" android:screenOrientation="portrait" android:showOnLockScreen="true" />
+    <activity android:name="org.rabta.phone.classic.activities.CallActivity" android:excludeFromRecents="true" android:exported="false" android:label="@string/ongoing_call" android:launchMode="singleTask" android:screenOrientation="portrait" android:showOnLockScreen="true" />
     <activity android:name=".activities.DialpadActivity" android:exported="true" android:label="@string/dialpad" android:parentActivityName=".activities.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
       <intent-filter>
         <action android:name="android.intent.action.DIAL" />

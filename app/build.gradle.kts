@@ -89,7 +89,7 @@ android {
     }
     productFlavors {
         register("core")
-        register("foss")
+        register("rabta")
         register("gplay")
     }
     buildTypes.create("full") {
@@ -162,7 +162,7 @@ dependencies {
     implementation(project(":contacts"))
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.robolectric:robolectric:4.17")
-    implementation(libs.fossify.commons)
+    implementation(libs.commons.library)
     implementation(libs.indicator.fast.scroll)
     implementation(libs.autofit.text.view)
     implementation(libs.kotlinx.serialization.json)

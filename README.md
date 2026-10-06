@@ -7,10 +7,10 @@ Raabta Phone is a combined Android phone and contacts app maintained by Usama. I
 This repository contains the complete Android Gradle source for the combined app. With JDK 17 and an Android SDK configured, run:
 
 ```powershell
-.\gradlew.bat :app:assembleFossFull
+.\gradlew.bat :app:assembleRabtaFull
 ```
 
-The debug APK is generated under `app/build/outputs/apk/foss/full/`. Build outputs, local SDK paths, caches, and signing keys are intentionally not committed.
+The debug APK is generated under `app/build/outputs/apk/rabta/full/`. Build outputs, local SDK paths, caches, and signing keys are intentionally not committed. The Android package is `org.rabta.phone.classic.debug`; because this differs from previous editions, it installs separately rather than updating them.
 
 ## Project history and license
 

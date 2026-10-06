@@ -7,7 +7,7 @@
         errorLine1="            launchChangeAppLanguageIntent()"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/activities/SettingsActivity.kt"
+            file="src/main/kotlin/org/rabta/contacts/activities/SettingsActivity.kt"
             line="156"
             column="13"/>
     </issue>
@@ -47,7 +47,7 @@
         errorLine1="class SplashActivity : BaseSplashActivity() {"
         errorLine2="      ~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/activities/SplashActivity.kt"
+            file="src/main/kotlin/org/rabta/contacts/activities/SplashActivity.kt"
             line="6"
             column="7"/>
     </issue>
@@ -58,7 +58,7 @@
         errorLine1="        val view = activity.layoutInflater.inflate(R.layout.datetime_pattern_info_layout, null)"
         errorLine2="                                                                                          ~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/dialogs/DateTimePatternInfoDialog.kt"
+            file="src/main/kotlin/org/rabta/contacts/dialogs/DateTimePatternInfoDialog.kt"
             line="11"
             column="91"/>
     </issue>
@@ -69,7 +69,7 @@
         errorLine1="    private var view = activity.layoutInflater.inflate(R.layout.dialog_manage_visible_fields, null)"
         errorLine2="                                                                                              ~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/dialogs/ManageVisibleFieldsDialog.kt"
+            file="src/main/kotlin/org/rabta/contacts/dialogs/ManageVisibleFieldsDialog.kt"
             line="12"
             column="95"/>
     </issue>
@@ -80,7 +80,7 @@
         errorLine1="    private var view = activity.layoutInflater.inflate(R.layout.dialog_manage_visible_tabs, null)"
         errorLine2="                                                                                            ~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/dialogs/ManageVisibleTabsDialog.kt"
+            file="src/main/kotlin/org/rabta/contacts/dialogs/ManageVisibleTabsDialog.kt"
             line="15"
             column="93"/>
     </issue>
@@ -135,7 +135,7 @@
         errorLine1="            val drawable = resources.getDrawable(R.drawable.shortcut_contact).mutate()"
         errorLine2="                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/adapters/ContactsAdapter.kt"
+            file="src/main/kotlin/org/rabta/contacts/adapters/ContactsAdapter.kt"
             line="321"
             column="28"/>
     </issue>
@@ -146,7 +146,7 @@
         errorLine1="        resources.getDrawable(if (on) org.fossify.commons.R.drawable.ic_star_vector else org.fossify.commons.R.drawable.ic_star_outline_vector)"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/activities/EditContactActivity.kt"
+            file="src/main/kotlin/org/rabta/contacts/activities/EditContactActivity.kt"
             line="1574"
             column="9"/>
     </issue>
@@ -157,7 +157,7 @@
         errorLine1="        val drawable = resources.getDrawable(org.fossify.commons.R.drawable.shortcut_plus)"
         errorLine2="                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/activities/MainActivity.kt"
+            file="src/main/kotlin/org/rabta/contacts/activities/MainActivity.kt"
             line="267"
             column="24"/>
     </issue>
@@ -168,7 +168,7 @@
         errorLine1="        resources.getDrawable(if (on) org.fossify.commons.R.drawable.ic_star_vector else org.fossify.commons.R.drawable.ic_star_outline_vector)"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/activities/ViewContactActivity.kt"
+            file="src/main/kotlin/org/rabta/contacts/activities/ViewContactActivity.kt"
             line="852"
             column="9"/>
     </issue>
@@ -715,7 +715,7 @@
     <issue
         id="MissingTranslation"
         message="&quot;show_private_contacts&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;lv&quot; (Latvian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;ne&quot; (Nepali), &quot;nn&quot; (Norwegian Nynorsk), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;cy&quot; (Welsh), &quot;bqi&quot;, &quot;ckb&quot;"
-        errorLine1="    &lt;string name=&quot;show_private_contacts&quot;>Show private contacts to Fossify Phone, Messages, and Calendar&lt;/string>"
+        errorLine1="    &lt;string name=&quot;show_private_contacts&quot;>Show private contacts to Raabta Phone, Messages, and Calendar&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/values/strings.xml"
@@ -1132,15 +1132,15 @@
 
     <issue
         id="UnsafeIntentLaunch"
-        message="This intent could be coming from an untrusted source. It is later launched by an unprotected component org.fossify.contacts.activities.MainActivity. You could either make the component org.fossify.contacts.activities.MainActivity protected; or sanitize this intent using androidx.core.content.IntentSanitizer."
+        message="This intent could be coming from an untrusted source. It is later launched by an unprotected component org.rabta.contacts.activities.MainActivity. You could either make the component org.rabta.contacts.activities.MainActivity protected; or sanitize this intent using androidx.core.content.IntentSanitizer."
         errorLine1="            startActivity(intent)"
         errorLine2="                          ~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/activities/MainActivity.kt"
+            file="src/main/kotlin/org/rabta/contacts/activities/MainActivity.kt"
             line="94"
             column="27"/>
         <location
-            file="src/main/kotlin/org/fossify/contacts/activities/MainActivity.kt"
+            file="src/main/kotlin/org/rabta/contacts/activities/MainActivity.kt"
             line="94"
             column="13"
             message="The unsafe intent is launched here."/>
@@ -1152,7 +1152,7 @@
         errorLine1="    override fun onReceive(context: Context, intent: Intent) {"
         errorLine2="                 ~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/receivers/BootCompletedReceiver.kt"
+            file="src/main/kotlin/org/rabta/contacts/receivers/BootCompletedReceiver.kt"
             line="11"
             column="18"/>
     </issue>
@@ -1174,7 +1174,7 @@
         errorLine1="        notifyDataSetChanged()"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/adapters/ContactsAdapter.kt"
+            file="src/main/kotlin/org/rabta/contacts/adapters/ContactsAdapter.kt"
             line="145"
             column="9"/>
     </issue>
@@ -1185,7 +1185,7 @@
         errorLine1="        notifyDataSetChanged()"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/adapters/ContactsAdapter.kt"
+            file="src/main/kotlin/org/rabta/contacts/adapters/ContactsAdapter.kt"
             line="149"
             column="9"/>
     </issue>
@@ -1196,7 +1196,7 @@
         errorLine1="            notifyDataSetChanged()"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/adapters/ContactsAdapter.kt"
+            file="src/main/kotlin/org/rabta/contacts/adapters/ContactsAdapter.kt"
             line="187"
             column="13"/>
     </issue>
@@ -1207,7 +1207,7 @@
         errorLine1="            notifyDataSetChanged()"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/adapters/ContactsAdapter.kt"
+            file="src/main/kotlin/org/rabta/contacts/adapters/ContactsAdapter.kt"
             line="191"
             column="13"/>
     </issue>
@@ -1218,7 +1218,7 @@
         errorLine1="            notifyDataSetChanged()"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/adapters/GroupsAdapter.kt"
+            file="src/main/kotlin/org/rabta/contacts/adapters/GroupsAdapter.kt"
             line="92"
             column="13"/>
     </issue>
@@ -1229,7 +1229,7 @@
         errorLine1="            notifyDataSetChanged()"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/adapters/GroupsAdapter.kt"
+            file="src/main/kotlin/org/rabta/contacts/adapters/GroupsAdapter.kt"
             line="96"
             column="13"/>
     </issue>
@@ -1240,7 +1240,7 @@
         errorLine1="                notifyDataSetChanged()"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/fragments/MyViewPagerFragment.kt"
+            file="src/main/kotlin/org/rabta/contacts/fragments/MyViewPagerFragment.kt"
             line="256"
             column="17"/>
     </issue>
@@ -1251,7 +1251,7 @@
         errorLine1="                notifyDataSetChanged()"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/fragments/MyViewPagerFragment.kt"
+            file="src/main/kotlin/org/rabta/contacts/fragments/MyViewPagerFragment.kt"
             line="261"
             column="17"/>
     </issue>
@@ -1262,7 +1262,7 @@
         errorLine1="                notifyDataSetChanged()"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/fragments/MyViewPagerFragment.kt"
+            file="src/main/kotlin/org/rabta/contacts/fragments/MyViewPagerFragment.kt"
             line="296"
             column="17"/>
     </issue>
@@ -1273,7 +1273,7 @@
         errorLine1="                notifyDataSetChanged()"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/fragments/MyViewPagerFragment.kt"
+            file="src/main/kotlin/org/rabta/contacts/fragments/MyViewPagerFragment.kt"
             line="301"
             column="17"/>
     </issue>
@@ -1464,7 +1464,7 @@
     <issue
         id="UnusedResources"
         message="The resource `R.string.package_name` appears to be unused"
-        errorLine1="    &lt;string name=&quot;package_name&quot; translatable=&quot;false&quot;>org.fossify.contacts&lt;/string>"
+        errorLine1="    &lt;string name=&quot;package_name&quot; translatable=&quot;false&quot;>org.rabta.contacts&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/values/donottranslate.xml"
@@ -1628,7 +1628,7 @@
         errorLine1="                shortcutManager.dynamicShortcuts = Arrays.asList(createNewContact)"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/activities/MainActivity.kt"
+            file="src/main/kotlin/org/rabta/contacts/activities/MainActivity.kt"
             line="257"
             column="17"/>
     </issue>
@@ -1639,7 +1639,7 @@
         errorLine1="        val placeholder = BitmapDrawable(activity.resources, SimpleContactsHelper(context).getContactLetterIcon(nameToUse))"
         errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/adapters/AutoCompleteTextViewAdapter.kt"
+            file="src/main/kotlin/org/rabta/contacts/adapters/AutoCompleteTextViewAdapter.kt"
             line="36"
             column="27"/>
     </issue>
@@ -1650,7 +1650,7 @@
         errorLine1="        set(showTabs) = prefs.edit().putInt(SHOW_TABS, showTabs).apply()"
         errorLine2="                        ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/helpers/Config.kt"
+            file="src/main/kotlin/org/rabta/contacts/helpers/Config.kt"
             line="14"
             column="25"/>
     </issue>
@@ -1661,7 +1661,7 @@
         errorLine1="        set(autoBackupContactSources) = prefs.edit().remove(AUTO_BACKUP_CONTACT_SOURCES).putStringSet(AUTO_BACKUP_CONTACT_SOURCES, autoBackupContactSources)"
         errorLine2="                                        ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/helpers/Config.kt"
+            file="src/main/kotlin/org/rabta/contacts/helpers/Config.kt"
             line="18"
             column="41"/>
     </issue>
@@ -1672,7 +1672,7 @@
         errorLine1="        val placeholder = BitmapDrawable(resources, getBigLetterPlaceholder(contact?.getNameToDisplay() ?: &quot;A&quot;))"
         errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/activities/ContactActivity.kt"
+            file="src/main/kotlin/org/rabta/contacts/activities/ContactActivity.kt"
             line="86"
             column="27"/>
     </issue>
@@ -1683,7 +1683,7 @@
         errorLine1="                    photoView.background = ColorDrawable(0)"
         errorLine2="                                           ~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/activities/ContactActivity.kt"
+            file="src/main/kotlin/org/rabta/contacts/activities/ContactActivity.kt"
             line="119"
             column="44"/>
     </issue>
@@ -1694,7 +1694,7 @@
         errorLine1="                    photoView.background = ColorDrawable(0)"
         errorLine2="                                           ~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/activities/ContactActivity.kt"
+            file="src/main/kotlin/org/rabta/contacts/activities/ContactActivity.kt"
             line="119"
             column="44"/>
     </issue>
@@ -1705,7 +1705,7 @@
         errorLine1="        val bitmap = Bitmap.createBitmap(realScreenSize.x, height, Bitmap.Config.ARGB_8888)"
         errorLine2="                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/activities/ContactActivity.kt"
+            file="src/main/kotlin/org/rabta/contacts/activities/ContactActivity.kt"
             line="240"
             column="22"/>
     </issue>
@@ -1716,7 +1716,7 @@
         errorLine1="        val placeholderImage = BitmapDrawable(resources, SimpleContactsHelper(activity).getContactLetterIcon(contact.getNameToDisplay()))"
         errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/adapters/ContactsAdapter.kt"
+            file="src/main/kotlin/org/rabta/contacts/adapters/ContactsAdapter.kt"
             line="343"
             column="32"/>
     </issue>
@@ -1727,7 +1727,7 @@
         errorLine1="        if (binding.contactAddressesHolder.childCount > 0 &amp;&amp;"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/activities/EditContactActivity.kt"
+            file="src/main/kotlin/org/rabta/contacts/activities/EditContactActivity.kt"
             line="690"
             column="13"/>
     </issue>
@@ -1738,7 +1738,7 @@
         errorLine1="                systemRingtoneSelected(Uri.parse(ringtone))"
         errorLine2="                                       ~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/activities/EditContactActivity.kt"
+            file="src/main/kotlin/org/rabta/contacts/activities/EditContactActivity.kt"
             line="780"
             column="40"/>
     </issue>
@@ -1749,7 +1749,7 @@
         errorLine1="        binding.mainTabsHolder.background = ColorDrawable(getProperBackgroundColor())"
         errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/activities/MainActivity.kt"
+            file="src/main/kotlin/org/rabta/contacts/activities/MainActivity.kt"
             line="106"
             column="45"/>
     </issue>
@@ -1760,7 +1760,7 @@
         errorLine1="        binding.mainTabsHolder.background = ColorDrawable(getProperBackgroundColor())"
         errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/activities/MainActivity.kt"
+            file="src/main/kotlin/org/rabta/contacts/activities/MainActivity.kt"
             line="106"
             column="45"/>
     </issue>
@@ -1771,7 +1771,7 @@
         errorLine1="                    val placeholderImage = BitmapDrawable(root.resources, SimpleContactsHelper(root.context).getContactLetterIcon(avatarName))"
         errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/adapters/SelectContactsAdapter.kt"
+            file="src/main/kotlin/org/rabta/contacts/adapters/SelectContactsAdapter.kt"
             line="142"
             column="44"/>
     </issue>
@@ -1782,7 +1782,7 @@
         errorLine1="                    systemRingtoneSelected(Uri.parse(ringtone))"
         errorLine2="                                           ~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/activities/ViewContactActivity.kt"
+            file="src/main/kotlin/org/rabta/contacts/activities/ViewContactActivity.kt"
             line="710"
             column="44"/>
     </issue>
@@ -1793,7 +1793,7 @@
         errorLine1="                    setOnTouchListener { _, event ->"
         errorLine2="                    ^">
         <location
-            file="src/main/kotlin/org/fossify/contacts/adapters/ContactsAdapter.kt"
+            file="src/main/kotlin/org/rabta/contacts/adapters/ContactsAdapter.kt"
             line="470"
             column="21"/>
     </issue>
@@ -1804,7 +1804,7 @@
         errorLine1="                    setOnTouchListener { _, event ->"
         errorLine2="                                       ^">
         <location
-            file="src/main/kotlin/org/fossify/contacts/adapters/ContactsAdapter.kt"
+            file="src/main/kotlin/org/rabta/contacts/adapters/ContactsAdapter.kt"
             line="470"
             column="40"/>
     </issue>
@@ -1815,7 +1815,7 @@
         errorLine1="                    setOnTouchListener(null)"
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/adapters/ContactsAdapter.kt"
+            file="src/main/kotlin/org/rabta/contacts/adapters/ContactsAdapter.kt"
             line="480"
             column="21"/>
     </issue>
@@ -2013,7 +2013,7 @@
         errorLine1="            exportContactsFilename.setText(&quot;contacts_${activity.getCurrentFormattedDateTime()}&quot;)"
         errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/dialogs/ExportContactsDialog.kt"
+            file="src/main/kotlin/org/rabta/contacts/dialogs/ExportContactsDialog.kt"
             line="31"
             column="44"/>
     </issue>
@@ -2024,7 +2024,7 @@
         errorLine1="            exportContactsFilename.setText(&quot;contacts_${activity.getCurrentFormattedDateTime()}&quot;)"
         errorLine2="                                            ~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/contacts/dialogs/ExportContactsDialog.kt"
+            file="src/main/kotlin/org/rabta/contacts/dialogs/ExportContactsDialog.kt"
             line="31"
             column="45"/>
     </issue>

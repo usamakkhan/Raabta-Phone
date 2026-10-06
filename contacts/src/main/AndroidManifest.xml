@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:installLocation="auto">
   <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
   <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -11,8 +11,6 @@
   <uses-permission android:name="android.permission.USE_FINGERPRINT" tools:node="remove" />
   <uses-feature android:name="android.hardware.telephony" android:required="false" />
   <queries>
-    <package android:name="org.fossify.contacts.debug" />
-    <package android:name="org.fossify.contacts" />
     <!-- Required for loading contact accounts -->
     <intent>
       <action android:name="android.accounts.AccountAuthenticator" />
@@ -129,7 +127,7 @@
       </intent-filter>
     </receiver>
     <receiver android:name=".receivers.AutomaticBackupReceiver" android:exported="false" />
-    <provider android:name="org.fossify.contacts.contentproviders.ContactsFileProvider" android:authorities="${applicationId}.provider" android:exported="false" android:grantUriPermissions="true">
+    <provider android:name="org.rabta.contacts.contentproviders.ContactsFileProvider" android:authorities="${applicationId}.provider" android:exported="false" android:grantUriPermissions="true">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/rc_provider_paths" />
     </provider>
     <provider android:name=".contentproviders.MyContactsContentProvider" android:authorities="${applicationId}.privatecontacts" android:exported="false" />

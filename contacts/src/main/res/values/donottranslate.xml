@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="rc_package_name" translatable="false">org.fossify.contacts</string>
+    <string name="rc_package_name" translatable="false">org.rabta.contacts</string>
     <string name="rc_app_name" translatable="false">Raabta Contacts</string>
 
     <string name="rc_im" translatable="false">IM</string>

@@ -575,7 +575,7 @@
                 android:paddingBottom="@dimen/normal_margin"
                 android:singleLine="true"
                 android:textSize="@dimen/bigger_text_size"
-                tools:text="hello@fossify.org" />
+                tools:text="hello@example.com" />
 
         </RelativeLayout>
     </ScrollView>

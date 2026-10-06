@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "org.fossify.contacts"
+    namespace = "org.rabta.contacts"
     compileSdk = 36
     defaultConfig {
         minSdk = 26
-        buildConfigField("String", "APPLICATION_ID", "\"org.fossify.phone.classic.debug\"")
+        buildConfigField("String", "APPLICATION_ID", "\"org.rabta.phone.classic.debug\"")
         buildConfigField("String", "VERSION_NAME", "\"${project.property("VERSION_NAME")}\"")
         buildConfigField("int", "VERSION_CODE", project.property("VERSION_CODE").toString())
     }
@@ -25,7 +25,7 @@ android {
 kotlin { compilerOptions { jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17) } }
 ksp { arg("room.schemaLocation", "$projectDir/schemas") }
 dependencies {
-    implementation(libs.fossify.commons)
+    implementation(libs.commons.library)
     implementation(libs.indicator.fast.scroll)
     implementation(libs.autofit.text.view)
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0")
