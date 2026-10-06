@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rc_updating">Updating…</string>
+    <string name="rc_phone_storage">Phone storage</string>
+    <string name="rc_phone_storage_hidden">Phone storage (not visible by other apps)</string>
+    <string name="rc_search_contacts">Search contacts</string>
+    <string name="rc_search_favorites">Search favourites</string>
+    <plurals name="rc_delete_groups">
+        <item quantity="one">%d group</item>
+        <item quantity="other">%d groups</item>
+    </plurals>
+</resources>

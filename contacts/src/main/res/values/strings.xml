@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rc_app_launcher_name">Raabta Contacts</string>
+    <string name="rc_address">Address</string>
+    <string name="rc_street">Street</string>
+    <string name="rc_neighborhood">Appartment or suite number</string>
+    <string name="rc_city">City</string>
+    <string name="rc_postcode">Postal code</string>
+    <string name="rc_pobox">Post office box</string>
+    <string name="rc_region">State</string>
+    <string name="rc_country">Country</string>
+    <string name="rc_inserting">Inserting…</string>
+    <string name="rc_updating">Updating…</string>
+    <string name="rc_phone_storage">Phone storage</string>
+    <string name="rc_phone_storage_hidden">Phone storage (not visible by other apps)</string>
+    <string name="rc_company">Company</string>
+    <string name="rc_job_position">Job position</string>
+    <string name="rc_send_sms_to_contacts">Send SMS to contacts</string>
+    <string name="rc_send_email_to_contacts">Send email to contacts</string>
+    <string name="rc_send_sms_to_group">Send SMS to group</string>
+    <string name="rc_send_email_to_group">Send email to group</string>
+    <string name="rc_fields_empty">At least 1 field has to be filled out</string>
+    <string name="rc_must_be_at_edit">You must be at the Edit screen to modify a contact</string>
+
+    <!-- Placeholders -->
+    <string name="rc_no_contacts_with_emails">No contacts with emails have been found</string>
+    <string name="rc_no_contacts_with_phone_numbers">No contacts with phone numbers have been found</string>
+
+    <string name="rc_new_contact">New contact</string>
+    <string name="rc_select_contact">Select contact</string>
+    <string name="rc_nickname">Nickname</string>
+    <string name="rc_select_account">Select account</string>
+
+    <!-- Groups -->
+    <string name="rc_no_groups">No groups</string>
+    <string name="rc_create_new_group">Create a new group</string>
+    <string name="rc_remove_from_group">Remove from group</string>
+    <string name="rc_no_group_participants">This group is empty</string>
+    <string name="rc_add_contacts">Add contacts</string>
+    <string name="rc_no_group_created">There are no contact groups on the device</string>
+    <string name="rc_create_group">Create group</string>
+    <string name="rc_add_to_group">Add to group</string>
+    <string name="rc_create_group_under_account">Create group under account</string>
+
+    <!-- Photo -->
+    <string name="rc_remove_photo">Remove photo</string>
+    <string name="rc_change_photo">Change photo</string>
+
+    <!-- Settings -->
+    <string name="rc_show_phone_numbers">Show phone numbers</string>
+    <string name="rc_show_contact_thumbnails">Show contact thumbnails</string>
+    <string name="rc_format_phone_numbers">Format phone numbers</string>
+    <string name="rc_show_dialpad_button">Show a dialpad button on the main screen</string>
+    <string name="rc_manage_shown_contact_fields">Manage shown contact fields</string>
+    <string name="rc_contacts">Contacts</string>
+    <string name="rc_show_only_contacts_with_numbers">Show only contacts with phone numbers</string>
+    <string name="rc_show_private_contacts">Show private contacts to Raabta Phone, Messages, and Calendar</string>
+    <string name="rc_merge_duplicate_contacts">Merge duplicate contacts</string>
+
+    <!-- Favorites -->
+    <string name="rc_no_favorites">Seems like you haven\'t added any favorite contacts yet.</string>
+    <string name="rc_toggle_favorite">Toggle favorite</string>
+
+    <!-- Search -->
+    <string name="rc_search_contacts">Search contacts</string>
+    <string name="rc_search_favorites">Search favorites</string>
+    <string name="rc_search_groups">Search groups</string>
+
+    <!-- Export / Import -->
+    <string name="rc_import_contacts">Import contacts</string>
+    <string name="rc_export_contacts">Export contacts</string>
+    <string name="rc_import_contacts_from_vcf">Import contacts from a .vcf file</string>
+    <string name="rc_import_contacts_from_vcf_pro">Import contacts from a .vcf file (Pro)</string>
+    <string name="rc_export_contacts_to_vcf">Export contacts to a .vcf file</string>
+    <string name="rc_target_contact_source">Target contact source</string>
+    <string name="rc_include_contact_sources">Include contact sources</string>
+    <string name="rc_filename_without_vcf">Filename (without .vcf)</string>
+
+    <!-- Dialpad -->
+    <string name="rc_dialpad">Dialpad</string>
+    <string name="rc_recents">Recents</string>
+    <string name="rc_tab_action_hint">Select a tab to open it</string>
+    <string name="rc_add_number_to_contact">Add number to contact</string>
+
+    <!-- Visible fields -->
+    <string name="rc_prefix">Prefix</string>
+    <string name="rc_suffix">Suffix</string>
+    <string name="rc_phone_numbers">Phone numbers</string>
+    <string name="rc_emails">Emails</string>
+    <string name="rc_addresses">Addresses</string>
+    <string name="rc_structured_addresses">Structured addresses (edit mode)</string>
+    <string name="rc_events">Events (birthdays, anniversaries)</string>
+    <string name="rc_organization">Organization</string>
+    <string name="rc_websites">Websites</string>
+    <string name="rc_groups">Groups</string>
+    <string name="rc_contact_source">Contact source</string>
+    <string name="rc_instant_messaging">Instant messaging (IM)</string>
+    <string name="rc_ringtone">Ringtone</string>
+
+    <!-- Confirmation dialog -->
+    <string name="rc_delete_from_all_sources">The contact will be removed from all contact sources.</string>
+
+    <plurals name="rc_delete_groups">
+        <item quantity="one">%d group</item>
+        <item quantity="other">%d groups</item>
+    </plurals>
+
+    <!-- FAQ -->
+    <string name="rc_faq_1_title">I want to change what fields are visible at contacts. Can I do it?</string>
+    <string name="rc_faq_1_text">Yes, all you have to do is go in Settings -> Manage shown contact fields. There you can select what fields should be visible. Some of them are even disabled by default, so you might find some new ones there.</string>
+</resources>

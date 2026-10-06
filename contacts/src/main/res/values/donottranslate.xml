@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rc_package_name" translatable="false">org.fossify.contacts</string>
+    <string name="rc_app_name" translatable="false">Raabta Contacts</string>
+
+    <string name="rc_im" translatable="false">IM</string>
+    <string name="rc_aim" translatable="false">AIM</string>
+    <string name="rc_windows_live" translatable="false">Windows Live</string>
+    <string name="rc_yahoo" translatable="false">Yahoo</string>
+    <string name="rc_skype" translatable="false">Skype</string>
+    <string name="rc_qq" translatable="false">QQ</string>
+    <string name="rc_hangouts" translatable="false">Hangouts</string>
+    <string name="rc_icq" translatable="false">ICQ</string>
+    <string name="rc_jabber" translatable="false">Jabber</string>
+    <string name="rc_telegram" translatable="false">Telegram</string>
+    <string name="rc_viber" translatable="false">Viber</string>
+</resources>

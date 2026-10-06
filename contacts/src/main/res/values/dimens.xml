@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rc_contact_photo_size">88dp</dimen>
+    <dimen name="rc_contact_actions_size">48dp</dimen>
+    <dimen name="rc_contact_icons_size">40dp</dimen>
+    <dimen name="rc_dialpad_button_size">60dp</dimen>
+    <dimen name="rc_top_contact_image_height">300dp</dimen>
+</resources>

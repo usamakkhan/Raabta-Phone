@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rc_updating">Actualisante…</string>
+    <string name="rc_search_groups">Cercar gruppos</string>
+    <string name="rc_search_contacts">Cercar contactos</string>
+    <string name="rc_search_favorites">Cercar favoritos</string>
+    <string name="rc_phone_storage">Immagazinage de telephono</string>
+    <string name="rc_phone_storage_hidden">Immagazinage de telephono (non visibile per altere applicationes)</string>
+</resources>

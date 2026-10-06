@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rc_send_sms_to_contacts">Nosūtīt kontaktpersonām SMS</string>
+    <string name="rc_send_email_to_contacts">Nosūtīt kontaktpersonām e-pasta ziņojumu</string>
+    <string name="rc_no_groups">Nav kopu</string>
+    <string name="rc_postcode">Pasta indekss</string>
+    <string name="rc_city">Pilsēta</string>
+    <string name="rc_neighborhood">Dzīvokļa numurs</string>
+    <string name="rc_street">Iela</string>
+    <string name="rc_country">Valsts</string>
+    <string name="rc_create_new_group">Izveidot jaunu kopu</string>
+    <string name="rc_region">Apgabals</string>
+    <string name="rc_pobox">Pasta nodaļas kastīte</string>
+    <string name="rc_updating">Atjaunina…</string>
+    <string name="rc_phone_storage_hidden">Tālruņa krātuve (nav redzama citām lietotnēm)</string>
+    <string name="rc_company">Uzņēmums</string>
+    <string name="rc_job_position">Amats</string>
+    <string name="rc_inserting">Ievieto…</string>
+    <string name="rc_phone_storage">Tālruņa krātuve</string>
+    <string name="rc_no_group_participants">Šī kopa ir tukša</string>
+    <string name="rc_add_contacts">Pievienot kontaktpersonas</string>
+    <string name="rc_remove_from_group">Noņemt no kopas</string>
+    <string name="rc_select_account">Atlasīt kontu</string>
+    <string name="rc_dialpad">Ciparnīca</string>
+</resources>

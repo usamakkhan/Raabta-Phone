@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rc_app_launcher_name">Raabta Contacts</string>
+    <string name="rc_address">نشۊوی</string>
+    <string name="rc_street">خیابووݩ</string>
+    <string name="rc_postcode">کود پوستی</string>
+    <string name="rc_pobox">سندوق پوستی</string>
+    <string name="rc_region">ایالت</string>
+    <string name="rc_country">کشور</string>
+    <string name="rc_city">شئر</string>
+    <string name="rc_inserting">هونی جاسازی اکونه…</string>
+    <string name="rc_updating">هونی ورۊ رسۊوی ابۊ…</string>
+    <string name="rc_phone_storage">ویرگه دسگا</string>
+    <string name="rc_dialpad">شوماره گر</string>
+    <string name="rc_phone_storage_hidden">ویرگه دسگا (سی برنومه یل دیری دیار نؽ)</string>
+    <string name="rc_job_position">مۉقعیت شۊغلی</string>
+    <string name="rc_send_sms_to_contacts">فشناڌن پیوم و هومدنگووݩ</string>
+    <string name="rc_send_email_to_contacts">فشناڌن ایمیل و هومدنگووݩ</string>
+    <string name="rc_send_sms_to_group">فشناڌن پیوم و بونکۊ</string>
+    <string name="rc_send_email_to_group">فشناڌن ایمیل و بونکۊ</string>
+    <string name="rc_company">شرکت</string>
+    <string name="rc_neighborhood">شوماره آپارتمان یا سۊییت</string>
+</resources>

@@ -1,0 +1,17 @@
+*.iml
+*.aab
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+**/build/
+**/.gradle/
+**/.kotlin/
+**/local.properties
+/captures
+keystore.jks
+keystore.properties
+fastlane/fastlane.json
+fastlane/report.xml
+.kotlin/

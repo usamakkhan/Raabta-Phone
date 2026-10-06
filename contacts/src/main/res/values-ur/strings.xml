@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rc_send_email_to_contacts">روابط کو برقی خط بھیجیں</string>
+    <string name="rc_send_sms_to_group">گروہ کو ایس ایم ایس بھیجیں</string>
+    <string name="rc_send_sms_to_contacts">روابط کو ایس ایم ایس بھیجیں</string>
+    <string name="rc_app_launcher_name">Raabta Contacts</string>
+    <string name="rc_address">پتہ</string>
+    <string name="rc_inserting">داخل کر رہا ہے…</string>
+    <string name="rc_updating">تجدید کر رہا ہے…</string>
+    <string name="rc_phone_storage">ہاتف ذخیرہ</string>
+    <string name="rc_phone_storage_hidden">ہاتف ذخیرہ (دیگر اطلاقیات کیلئے مرئی نہیں)</string>
+    <string name="rc_company">شرکت</string>
+    <string name="rc_fields_empty">کم از کم ایک میدان پُر کرنا پڑے گا</string>
+    <string name="rc_must_be_at_edit">رابطہ ترمیم کرنے کیلئے آپکو ترمیم صفحہ نمائش پر ہونا پڑے گا</string>
+    <string name="rc_job_position">نوکری کی واقعیت</string>
+    <string name="rc_send_email_to_group">گروہ کو برقی خط بھیجیں</string>
+    <string name="rc_no_contacts_with_emails">کوئی برقی ڈاک والے روابط نہیں ملے</string>
+</resources>

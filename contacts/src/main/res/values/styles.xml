@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="rc_AppTheme" parent="AppTheme.Base" />
+
+    <style name="rc_roundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

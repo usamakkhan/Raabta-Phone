@@ -1,0 +1,8 @@
+<resources>
+    <string name="classic_app_name" translatable="false">Raabta Phone</string>
+    <string name="classic_settings_section" translatable="false">Raabta Phone</string>
+    <string name="classic_search_title" translatable="false">Strict prefix search</string>
+    <string name="classic_search_description" translatable="false">M finds Max and Mia, never Emily or Sam. Applies to contacts, favorites, recents and T9. Turn off to use standard search.</string>
+    <string name="classic_signature" translatable="false">developed with ❤️ by Usama</string>
+    <string name="classic_attribution" translatable="false">Credits and developer contact</string>
+</resources>

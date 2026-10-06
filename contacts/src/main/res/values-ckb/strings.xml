@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rc_app_launcher_name">Raabta Contacts</string>
+    <string name="rc_address">ناونیشان</string>
+    <string name="rc_street">شەقام</string>
+    <string name="rc_city">شار</string>
+</resources>

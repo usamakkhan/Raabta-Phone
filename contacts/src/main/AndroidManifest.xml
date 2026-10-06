@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:installLocation="auto">
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <uses-permission android:name="android.permission.READ_CONTACTS" />
+  <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+  <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+  <uses-permission android:name="android.permission.CALL_PHONE" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+  <uses-permission android:name="android.permission.USE_FINGERPRINT" tools:node="remove" />
+  <uses-feature android:name="android.hardware.telephony" android:required="false" />
+  <queries>
+    <package android:name="org.fossify.contacts.debug" />
+    <package android:name="org.fossify.contacts" />
+    <!-- Required for loading contact accounts -->
+    <intent>
+      <action android:name="android.accounts.AccountAuthenticator" />
+    </intent>
+  </queries>
+  <application>
+    <activity android:name=".activities.SplashActivity" android:exported="false" android:theme="@style/SplashTheme" />
+    <activity android:name=".activities.MainActivity" android:configChanges="orientation" android:exported="true" android:label="@string/rc_app_name">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <data android:mimeType="text/directory" />
+        <data android:mimeType="text/vcard" />
+        <data android:mimeType="text/x-vcard" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.SEND" />
+        <data android:mimeType="text/directory" />
+        <data android:mimeType="text/vcard" />
+        <data android:mimeType="text/x-vcard" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.APP_CONTACTS" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".activities.SettingsActivity" android:configChanges="orientation" android:exported="true" android:label="@string/settings" android:parentActivityName=".activities.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".activities.GroupContactsActivity" android:configChanges="orientation" android:exported="false" android:parentActivityName=".activities.MainActivity" />
+    <activity android:name=".activities.ViewContactActivity" android:configChanges="orientation" android:exported="true" android:label="@string/details" android:parentActivityName=".activities.MainActivity" android:theme="@style/TranslucentTheme">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:mimeType="vnd.android.cursor.dir/person" />
+        <data android:mimeType="vnd.android.cursor.dir/contact" />
+        <data android:mimeType="vnd.android.cursor.item/group" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:mimeType="vnd.android.cursor.item/person" />
+        <data android:mimeType="vnd.android.cursor.item/contact" />
+        <data android:mimeType="vnd.android.cursor.item/raw_contact" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.android.contacts.action.QUICK_CONTACT" />
+        <action android:name="android.provider.action.QUICK_CONTACT" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:mimeType="vnd.android.cursor.item/contact" />
+        <data android:mimeType="vnd.android.cursor.item/person" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".activities.EditContactActivity" android:configChanges="orientation" android:exported="true" android:parentActivityName=".activities.MainActivity" android:theme="@style/TranslucentTheme" android:windowSoftInputMode="adjustResize">
+      <intent-filter>
+        <action android:name="android.intent.action.EDIT" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:host="contacts" android:mimeType="vnd.android.cursor.item/person" />
+        <data android:host="com.android.contacts" android:mimeType="vnd.android.cursor.item/contact" />
+        <data android:host="com.android.contacts" android:mimeType="vnd.android.cursor.item/raw_contact" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.INSERT" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:mimeType="vnd.android.cursor.dir/person" />
+        <data android:mimeType="vnd.android.cursor.dir/contact" />
+        <data android:mimeType="vnd.android.cursor.dir/raw_contact" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.EDIT" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:mimeType="vnd.android.cursor.item/group" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.INSERT" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:mimeType="vnd.android.cursor.dir/group" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".activities.InsertOrEditContactActivity" android:configChanges="orientation" android:exported="true" android:label="@string/rc_select_contact">
+      <intent-filter>
+        <action android:name="android.intent.action.INSERT_OR_EDIT" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:mimeType="vnd.android.cursor.item/person" />
+        <data android:mimeType="vnd.android.cursor.item/contact" />
+        <data android:mimeType="vnd.android.cursor.item/raw_contact" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.android.contacts.action.SHOW_OR_CREATE_CONTACT" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:scheme="mailto" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.PICK" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:mimeType="vnd.android.cursor.dir/contact" />
+        <data android:mimeType="vnd.android.cursor.dir/person" />
+        <data android:mimeType="vnd.android.cursor.dir/phone_v2" />
+        <data android:mimeType="vnd.android.cursor.dir/phone" />
+        <data android:mimeType="vnd.android.cursor.dir/email_v2" />
+      </intent-filter>
+    </activity>
+    <receiver android:name=".receivers.BootCompletedReceiver" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+        <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+        <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+        <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+      </intent-filter>
+    </receiver>
+    <receiver android:name=".receivers.AutomaticBackupReceiver" android:exported="false" />
+    <provider android:name="org.fossify.contacts.contentproviders.ContactsFileProvider" android:authorities="${applicationId}.provider" android:exported="false" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/rc_provider_paths" />
+    </provider>
+    <provider android:name=".contentproviders.MyContactsContentProvider" android:authorities="${applicationId}.privatecontacts" android:exported="false" />
+  </application>
+</manifest>
