@@ -1,6 +1,8 @@
 # Raabta Phone
 
-Raabta Phone is a combined Android phone and contacts app maintained by Usama. The current source version is `2.6.0-Full`. One APK provides the dialer, in-call screen, call history, and full Contacts interface. Android 8.0 (API 26) or later is required.
+Raabta Phone is a combined Android phone and contacts app maintained by Usama. The current source version is `2.6.1-Full`. One APK provides the dialer, in-call screen, call history, and full Contacts interface. Android 8.0 (API 26) or later is required.
+
+Version 2.6.1 updates the shared Commons library to 6.2.0 and adapts its two upstream-brand checks to Raabta's package name during the build. This prevents the inherited false “fake version” warning and the related color-customization lockout. The build fails if a future Commons version changes either check, so the adaptation must be reviewed before another release.
 
 ## Features
 

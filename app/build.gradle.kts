@@ -2,9 +2,11 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import org.jetbrains.kotlin.konan.properties.Properties
 import java.io.FileInputStream
+import com.android.build.api.instrumentation.InstrumentationScope
+import org.rabta.gradle.RaabtaCommonsVisitorFactory
 
 plugins {
-    alias(libs.plugins.android)
+    id("com.android.application")
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.kotlinSerialization)
     alias(libs.plugins.detekt)
@@ -151,6 +153,15 @@ detekt {
     config.setFrom("$rootDir/detekt.yml")
     buildUponDefaultConfig = true
     allRules = false
+}
+
+androidComponents {
+    onVariants(selector().all()) { variant ->
+        variant.instrumentation.transformClassesWith(
+            RaabtaCommonsVisitorFactory::class.java,
+            InstrumentationScope.ALL
+        ) { }
+    }
 }
 
 tasks.withType<org.gradle.api.tasks.testing.Test>().configureEach {

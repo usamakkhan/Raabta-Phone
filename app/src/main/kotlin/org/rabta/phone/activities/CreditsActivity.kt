@@ -36,7 +36,7 @@ class CreditsActivity : RaabtaScreenActivity() {
             body.removeAllViews()
             toolbar.title = "Open-source licenses"
             label("Legal notices", true)
-            label("Fossify Phone 1.11.1, Fossify Contacts 1.6.0 and Fossify Commons 6.1.6 — original code, interfaces, assets and contributors. GPL-3.0.\n\nThis is an independent modified edition. Usama is credited for this edition, not sole authorship of its upstream components.")
+            label("Fossify Phone 1.11.1, Fossify Contacts 1.6.0 and Fossify Commons 6.2.0 — original code, interfaces, assets and contributors. GPL-3.0.\n\nThis is an independent modified edition. Usama is credited for this edition, not sole authorship of its upstream components.")
             label("Third-party libraries include AndroidX and Material Components (Apache-2.0), Kotlin and coroutines (Apache-2.0), Glide (BSD/Apache-2.0), libphonenumber (Apache-2.0), EventBus (Apache-2.0), IndicatorFastScroll (Apache-2.0), and AutofitTextView (Apache-2.0).")
             action("GNU GPL version 3 — full license") {
                 body.removeAllViews()
